@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: 'consolas';
+}
+
+input, textarea {
+    outline: none;
+}
+
+input::placeholder {
+    opacity: .8;
+    transition: .2s;
+}
+
+input:focus::placeholder {
+    opacity: .4;
+}

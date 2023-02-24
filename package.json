@@ -1,0 +1,11 @@
+{
+  "name": "blog-template",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "alpinejs": "^3.11.1"
+  }
+}
