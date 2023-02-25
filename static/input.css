@@ -59,7 +59,6 @@ input:focus::placeholder {
 
 .input2 {
     @apply rounded-lg bg-white text-slate-800 p-2 px-4 border border-slate-300 text-lg;
-    @apply capitalize;
     font-family: 'product-sans-bold' !important;
 }
 
@@ -81,4 +80,17 @@ input:focus::placeholder {
 .tags > a {
     @apply hover:bg-slate-200 rounded-lg lg:rounded-none px-2 py-1 text-slate-500 cursor-pointer
 }
+
+.form {
+    @apply w-[280px] grid gap-y-1;
+}
+
+.form > input {
+    @apply w-full input2 lowercase;
+}
+
+.form > button {
+    @apply h-10 w-full btn btn-primary;
+}
+
 

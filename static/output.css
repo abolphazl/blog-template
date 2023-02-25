@@ -652,10 +652,6 @@ video {
   display: grid;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
 .h-64 {
   height: 16rem;
 }
@@ -674,10 +670,6 @@ video {
 
 .w-5 {
   width: 1.25rem;
-}
-
-.w-\[280px\] {
-  width: 280px;
 }
 
 .w-full {
@@ -706,10 +698,6 @@ video {
 
 .justify-around {
   justify-content: space-around;
-}
-
-.gap-y-1 {
-  row-gap: 0.25rem;
 }
 
 .gap-y-2 {
@@ -1004,7 +992,6 @@ input:focus::placeholder {
   line-height: 1.75rem;
   --tw-text-opacity: 1;
   color: rgb(30 41 59 / var(--tw-text-opacity));
-  text-transform: capitalize;
   font-family: 'product-sans-bold' !important;
 }
 
@@ -1073,6 +1060,59 @@ input:focus::placeholder {
   }
 }
 
+.form {
+  display: grid;
+  width: 280px;
+  row-gap: 0.25rem;
+}
+
+.form > input {
+  width: 100%;
+  text-transform: lowercase;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+  font-family: 'product-sans-bold';
+}
+
+.form > button {
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+  text-transform: capitalize;
+}
+
+.form > button:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(79 194 210 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(207 245 254 / var(--tw-bg-opacity));
+}
+
+.form > button {
+  font-family: 'product-sans-bold';
+}
+
 .hover\:border-slate-900:hover {
   --tw-border-opacity: 1;
   border-color: rgb(15 23 42 / var(--tw-border-opacity));
@@ -1139,4 +1179,5 @@ input:focus::placeholder {
     height: 16rem;
   }
 }
+
 
