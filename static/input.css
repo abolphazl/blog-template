@@ -2,12 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body {
-    font-family: 'consolas';
+@font-face {
+    font-family: product-sans-regular;
+    src: url(../static/fonts/product-sans-regular.ttf);
 }
 
-input, textarea {
+@font-face {
+    font-family: product-sans-bold;
+    src: url(../static/fonts/product-sans-bold.ttf);
+}
+
+
+body {
+    font-family: 'product-sans-regular';
+    background-color: #F1F3F5;
+}
+
+.bold {
+    font-family: 'product-sans-bold';
+}
+
+input,
+textarea {
     outline: none;
 }
 
@@ -19,3 +35,50 @@ input::placeholder {
 input:focus::placeholder {
     opacity: .4;
 }
+
+.btn, .btn-primary {
+    @apply bg-white text-slate-800 p-1 px-3 border border-slate-300 rounded-lg;
+    @apply capitalize;
+    @apply hover:bg-[#CFF5FE] hover:border-[#4FC2D2];
+    font-family: 'product-sans-bold';
+}
+
+.btn-secondary {
+    @apply hover:bg-red-200 hover:border-red-300;
+}
+
+.btn-warning {
+    @apply hover:bg-yellow-200 hover:border-yellow-500;
+}
+
+.input {
+    @apply rounded-full bg-white text-slate-800 p-2 px-4 border border-slate-300 text-lg;
+    @apply capitalize;
+    font-family: 'product-sans-bold' !important;
+}
+
+.input2 {
+    @apply rounded-lg bg-white text-slate-800 p-2 px-4 border border-slate-300 text-lg;
+    @apply capitalize;
+    font-family: 'product-sans-bold' !important;
+}
+
+.divider {
+    @apply border-t-2 border-gray-200;
+}
+
+.link {
+    @apply text-blue-500 hover:underline cursor-pointer;
+    font-family: 'product-sans-bold';
+}
+
+
+.tags {
+    @apply flex items-center lg:grid lg:gap-y-1 border border-slate-300 rounded-lg bg-white;
+    @apply text-slate-500;
+}
+
+.tags > a {
+    @apply hover:bg-slate-200 rounded-lg lg:rounded-none px-2 py-1 text-slate-500 cursor-pointer
+}
+
